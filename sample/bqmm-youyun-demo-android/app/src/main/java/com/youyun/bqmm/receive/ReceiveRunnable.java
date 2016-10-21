@@ -31,7 +31,7 @@ public class ReceiveRunnable implements Runnable {
         WeimiNotice weimiNotice = null;
         while (true) {
             try {
-                weimiNotice = NotifyCenter.clientNotifyChannel.take();
+                weimiNotice = (WeimiNotice) NotifyCenter.clientNotifyChannel.take();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

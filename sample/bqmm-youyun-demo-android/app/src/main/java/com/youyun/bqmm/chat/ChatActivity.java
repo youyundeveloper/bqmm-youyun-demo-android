@@ -65,7 +65,6 @@ public class ChatActivity extends AppCompatActivity implements ChatView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        BQMM.getInstance().initConfig(getApplicationContext(), "772d564e7fee4acaa7bf2a038b9116c6", "529226aa0eb4425b85150600dd23e2f9");
         setContentView(R.layout.activity_chat);
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);

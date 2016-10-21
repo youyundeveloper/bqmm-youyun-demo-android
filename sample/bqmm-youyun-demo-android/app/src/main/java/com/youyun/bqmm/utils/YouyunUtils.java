@@ -20,8 +20,8 @@ import java.util.UUID;
  */
 public class YouyunUtils {
 
-    public final static String CLIENT_ID = "1-20521-1b766ad17389c94e1dc1f2615714212a-andriod";
-    public final static String SECRET = "d5cf0a5812b4424f582ded05937e4387";
+    public final static String CLIENT_ID = "1-20533-ce8d0aeae862ec82700ff3e91efccc06-andriod";
+    public final static String SECRET = "c8f3a20d5139222958f568a7f2101e51";
     public final static String FACETYPE = "facetype";
     public final static String EMOJITYPE = "emojitype";
 

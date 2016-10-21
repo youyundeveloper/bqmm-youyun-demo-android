@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.ioyouyun.wchat.WeimiInstance;
 import com.youyun.bqmm.R;
 import com.youyun.bqmm.TempActivity;
 import com.youyun.bqmm.login.mvp.LoginPresenter;
@@ -57,6 +58,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void loginSuccess() {
+        //初始化表情云SDK
+        WeimiInstance.getInstance().initBqmmSDK(getApplicationContext());
+
         ReceiveRunnable receiveRunnable = new ReceiveRunnable(getApplicationContext());
         Thread msgHandler = new Thread(receiveRunnable);
         msgHandler.start();
